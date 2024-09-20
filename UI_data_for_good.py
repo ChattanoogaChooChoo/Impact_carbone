@@ -139,10 +139,10 @@ str_facebook_params = urlencode(facebook_link_params)
 facebook_share_link = f"https://www.facebook.com/share_channel/?{str_facebook_params}"
 
 linkedin_link_params = {
-    'shareUrl': app_url
+    'url': app_url
 }
 str_linkedin_params = urlencode(linkedin_link_params)
-linkedin_share_link = f"https://www.linkedin.com/feed/?{str_linkedin_params}"
+linkedin_share_link = f"https://www.linkedin.com/sharing/share-offsite/?{str_linkedin_params}"
 
 reddit_link_params = {
     'url': app_url,

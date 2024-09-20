@@ -629,3 +629,14 @@ style = st.markdown(f'''
         }}
     </style>
 ''', unsafe_allow_html=True)
+
+
+from streamlit.components.v1 import html
+html(f"""
+    <script>
+        links = parent.document.getElementsByTagName('a');
+        for (let link of links) {{
+            link.setAttribute('target', '_blank');
+        }}
+    </script>
+""")

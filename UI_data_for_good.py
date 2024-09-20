@@ -133,10 +133,11 @@ str_truth_params = urlencode(truth_link_params)
 truth_share_link = f"https://truthsocial.com/share?{str_truth_params}"
 
 facebook_link_params = {
-    'link': app_url
+    'href': app_url,
+    'display': 'popup'
 }
 str_facebook_params = urlencode(facebook_link_params)
-facebook_share_link = f"https://www.facebook.com/share_channel/?{str_facebook_params}"
+facebook_share_link = f"https://www.facebook.com/dialog/share?{str_facebook_params}"
 
 linkedin_link_params = {
     'url': app_url
